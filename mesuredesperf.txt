@@ -13,3 +13,9 @@ Poids Total
 9710.3 KB
 
 De manière générale les éléments rallentissant le site sont les images trop lourdes et le script javascript.
+
+
+Des solutions pour optimiser le site : 
+
+- compresser les images
+- supprimer les lignes de css qui ne serve à rien
