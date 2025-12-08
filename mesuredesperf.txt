@@ -1,0 +1,15 @@
+Ces indicateurs sont dans le rouge avant modifications : 
+
+First Contentful Paint
+2,2 s
+
+Largest Contentful Paint (Images, bannière)
+8,5 s
+
+Total Blocking Time (javascript)
+1 190 ms
+
+Poids Total
+9710.3 KB
+
+De manière générale les éléments rallentissant le site sont les images trop lourdes et le script javascript.
