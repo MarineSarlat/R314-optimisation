@@ -18,4 +18,7 @@ De manière générale les éléments rallentissant le site sont les images trop
 Des solutions pour optimiser le site : 
 
 - compresser les images
+- transformer les jpg en webp
 - supprimer les lignes de css qui ne serve à rien
+- extration du css du contenu le plus large pour le mettre dans le html
+- suppression des lignes qui ne serve pas et qui bloque dans le css et le javascript
