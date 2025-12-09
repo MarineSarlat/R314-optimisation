@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Site vitrine</title>
 
-  <!-- CSS critique inline pour le LCP -->
+ 
   <style>
     html, body { margin:0; padding:0; font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif; background:#0f1226; color:#E8ECF1; }
     .topbar { position:sticky; top:0; backdrop-filter:blur(6px); background:linear-gradient(180deg,rgba(13,16,35,.8),rgba(13,16,35,.2)); z-index:10; box-shadow:0 10px 30px rgba(0,0,0,.45); }
@@ -21,11 +21,9 @@
     .cta:hover { transform:translateY(-2px); box-shadow:0 28px 60px rgba(124,92,255,.45); }
   </style>
 
-  <!-- CSS complet préchargé de manière non bloquante -->
   <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="style.css"></noscript>
 
-  <!-- Scripts non bloquants -->
   <script src="script.js" defer></script>
   <script src="js/metrics.js" defer></script>
 </head>
