@@ -5,25 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Site vitrine</title>
 
- 
+  <!-- Fonts : chargement non bloquant -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        media="print" onload="this.media='all'">
+
+  <!-- CSS critique inline (above-the-fold) -->
   <style>
-    html, body { margin:0; padding:0; font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif; background:#0f1226; color:#E8ECF1; }
-    .topbar { position:sticky; top:0; backdrop-filter:blur(6px); background:linear-gradient(180deg,rgba(13,16,35,.8),rgba(13,16,35,.2)); z-index:10; box-shadow:0 10px 30px rgba(0,0,0,.45); }
-    .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
-    .logo { font-weight:700; letter-spacing:.5px; }
-    .logo span { color:#06D6A0; }
-    .menu { display:flex; gap:22px; }
-    .hero { padding:90px 0 40px; background: radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%), radial-gradient(900px 600px at 100% 0%, rgba(6,214,160,.25), transparent 60%); }
-    .hero-inner { display:grid; grid-template-columns:1fr; gap:28px; }
-    .hero h1 { font-size:clamp(28px,4vw,56px); line-height:1.05; margin:0 0 10px; }
-    .hero p { font-size:clamp(16px,1.8vw,22px); color:#93A1B1; }
-    .cta { display:inline-block; margin-top:18px; background:#7C5CFF; padding:14px 20px; border-radius:12px; box-shadow:0 20px 50px rgba(124,92,255,.35); transition: transform .2s ease, box-shadow .2s ease; }
-    .cta:hover { transform:translateY(-2px); box-shadow:0 28px 60px rgba(124,92,255,.45); }
+    :root{--bg:#0f1226;--fg:#E8ECF1;--muted:#93A1B1;--primary:#7C5CFF;--accent:#06D6A0;--card:#15193A;--shadow:rgba(0,0,0,0.45);}
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+    .topbar{position:sticky;top:0;backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(13,16,35,.8),rgba(13,16,35,.2));z-index:10;box-shadow:0 10px 30px var(--shadow);}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+    .logo{font-weight:700;letter-spacing:.5px;}
+    .logo span{color:var(--accent);}
+    .menu{display:flex;gap:22px;}
+    .hero{padding:90px 0 40px;background:radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%), radial-gradient(900px 600px at 100% 0%, rgba(6,214,160,.25), transparent 60%);}
+    .hero-inner{display:grid;grid-template-columns:1fr;gap:28px;}
+    .hero h1{font-size:clamp(28px,4vw,56px);line-height:1.05;margin:0 0 10px;}
+    .hero p{font-size:clamp(16px,1.8vw,22px);color:var(--muted);}
+    .cta{display:inline-block;margin-top:18px;background:var(--primary);padding:14px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(124,92,255,.35);transition:transform .2s ease, box-shadow .2s ease;}
+    .cta:hover{transform:translateY(-2px);box-shadow:0 28px 60px rgba(124,92,255,.45);}
   </style>
 
-  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <!-- CSS complet (non bloquant) -->
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
+  <!-- JS non bloquant -->
   <script src="script.js" defer></script>
   <script src="js/metrics.js" defer></script>
 </head>
@@ -49,6 +59,7 @@
     </div>
   </div>
 
+  <!-- Le reste du site : galerie, features, défis, footer -->
   <div id="galerie" class="section gallery">
     <div class="container">
       <h2>Galerie</h2>
@@ -67,10 +78,26 @@
     <div class="container">
       <h2>Fonctionnalités</h2>
       <div class="features-grid">
-        <div class="feature"><div class="icon">⚡</div><h3>Design moderne</h3><p>Couleurs, ombres, grille responsive.</p></div>
-        <div class="feature"><div class="icon">🧱</div><h3>Scripts</h3><p>Intégration de scripts pour effets visuels.</p></div>
-        <div class="feature"><div class="icon">🖼️</div><h3>Images</h3><p>Galerie de visuels variés.</p></div>
-        <div class="feature"><div class="icon">🔠</div><h3>Polices</h3><p>Typographie soignée.</p></div>
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <h3>Design moderne</h3>
+          <p>Couleurs, ombres, grille responsive.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🧱</div>
+          <h3>Scripts</h3>
+          <p>Intégration de scripts pour effets visuels.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🖼️</div>
+          <h3>Images</h3>
+          <p>Galerie de visuels variés.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔠</div>
+          <h3>Polices</h3>
+          <p>Typographie soignée.</p>
+        </div>
       </div>
     </div>
   </div>
