@@ -22,3 +22,4 @@ Des solutions pour optimiser le site :
 - supprimer les lignes de css qui ne serve à rien
 - extration du css du contenu le plus large pour le mettre dans le html
 - suppression dde la boucle while dans script + optimisation du code
+_ Ajout d'image plus petite sur la page d'accueil
