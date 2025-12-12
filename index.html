@@ -1,125 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Site vitrine</title>
-
-  <!-- Fonts : chargement non bloquant -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-        media="print" onload="this.media='all'">
-
-  <!-- CSS critique inline (above-the-fold) -->
-  <style>
-    :root{--bg:#0f1226;--fg:#E8ECF1;--muted:#93A1B1;--primary:#7C5CFF;--accent:#06D6A0;--card:#15193A;--shadow:rgba(0,0,0,0.45);}
-    *{box-sizing:border-box;}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;}
-    .topbar{position:sticky;top:0;backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(13,16,35,.8),rgba(13,16,35,.2));z-index:10;box-shadow:0 10px 30px var(--shadow);}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
-    .logo{font-weight:700;letter-spacing:.5px;}
-    .logo span{color:var(--accent);}
-    .menu{display:flex;gap:22px;}
-    .hero{padding:90px 0 40px;background:radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%), radial-gradient(900px 600px at 100% 0%, rgba(6,214,160,.25), transparent 60%);}
-    .hero-inner{display:grid;grid-template-columns:1fr;gap:28px;}
-    .hero h1{font-size:clamp(28px,4vw,56px);line-height:1.05;margin:0 0 10px;}
-    .hero p{font-size:clamp(16px,1.8vw,22px);color:var(--muted);}
-    .cta{display:inline-block;margin-top:18px;background:var(--primary);padding:14px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(124,92,255,.35);transition:transform .2s ease, box-shadow .2s ease;}
-    .cta:hover{transform:translateY(-2px);box-shadow:0 28px 60px rgba(124,92,255,.45);}
-  </style>
-
-  <!-- CSS complet (non bloquant) -->
-  <link rel="stylesheet" href="css/styles-2.css" media="print" onload="this.media='all'">
-
-  <!-- JS non bloquant -->
-  <script src="js/script.js" defer></script>
-  <script src="js/metrics.js" defer></script>
-</head>
-<body>
-  <div class="topbar">
-    <div class="container nav">
-      <div class="logo">Slow<span>Site</span></div>
-      <div class="menu">
-        <a href="#galerie">Galerie</a>
-        <a href="#defis">Défis</a>
-        <a href="#apropos">À propos</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Un site pour expérimenter la performance</h1>
-        <p>Testez, mesurez et proposez des améliorations.</p>
-        <a class="cta" href="#defis">Voir les défis</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Le reste du site : galerie, features, défis, footer -->
-  <div id="galerie" class="section gallery">
-    <div class="container">
-      <h2>Galerie</h2>
-      <div class="grid">
-        <div class="card"><a href="img1.html"><img src="img/img1.jpg" alt="Image 1" /></a></div>
-        <div class="card"><a href="img2.html"><img src="img/img2.jpg" alt="Image 2" /></a></div>
-        <div class="card"><a href="img3.html"><img src="img/img3.jpg" alt="Image 3" /></a></div>
-        <div class="card"><a href="img4.html"><img src="img/img4.jpg" alt="Image 4" /></a></div>
-        <div class="card"><a href="img5.html"><img src="img/img5.jpg" alt="Image 5" /></a></div>
-        <div class="card"><a href="img6.html"><img src="img/img6.jpg" alt="Image 6" /></a></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="apropos" class="section features">
-    <div class="container">
-      <h2>Fonctionnalités</h2>
-      <div class="features-grid">
-        <div class="feature">
-          <div class="icon">⚡</div>
-          <h3>Design moderne</h3>
-          <p>Couleurs, ombres, grille responsive.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">🧱</div>
-          <h3>Scripts</h3>
-          <p>Intégration de scripts pour effets visuels.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">🖼️</div>
-          <h3>Images</h3>
-          <p>Galerie de visuels variés.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">🔠</div>
-          <h3>Polices</h3>
-          <p>Typographie soignée.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site vitrine</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container nav">
+        <div class="logo">Slow<span>Site</span></div>
+        <div class="menu">
+          <a href="#galerie">Galerie</a>
+          <a href="#defis">Défis</a>
+          <a href="#apropos">À propos</a>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="defis" class="section challenges">
-    <div class="container">
-      <h2>Défis</h2>
-      <ol>
-        <li>Analyser le comportement réseau et le rendu.</li>
-        <li>Identifier les ressources critiques.</li>
-        <li>Proposer des optimisations mesurables.</li>
-        <li>Comparer avant/après avec des outils de mesure.</li>
-        <li>Documenter la démarche.</li>
-      </ol>
+    <div class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Un site pour expérimenter la performance</h1>
+          <p>Testez, mesurez et proposez des améliorations.</p>
+          <a class="cta" href="#defis">Voir les défis</a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div class="container">
-      <p>TD Optimisation du temps de chargement d’un site web</p>
-      <p>© 2025 — BUT MMI Béziers - MAURIN N.</p>
+    <div id="galerie" class="section gallery">
+      <div class="container">
+        <h2>Galerie</h2>
+        <div class="grid">
+          <div class="card">
+            <a href="img1.html"><img src="img/img1.webp" alt="Image 1" /></a>
+          </div>
+          <div class="card">
+            <a href="img2.html"><img src="img/img2.webp" alt="Image 2" /></a>
+          </div>
+          <div class="card">
+            <a href="img3.html"><img src="img/img3.webp" alt="Image 3" /></a>
+          </div>
+          <div class="card">
+            <a href="img4.html"><img src="img/img4.webp" alt="Image 4" /></a>
+          </div>
+          <div class="card">
+            <a href="img5.html"><img src="img/img5.webp" alt="Image 5" /></a>
+          </div>
+          <div class="card">
+            <a href="img6.html"><img src="img/img6.webp" alt="Image 6" /></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
+
+    <div id="apropos" class="section features">
+      <div class="container">
+        <h2>Fonctionnalités</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <h3>Design moderne</h3>
+            <p>Couleurs, ombres, grille responsive.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🧱</div>
+            <h3>Scripts</h3>
+            <p>Intégration de scripts pour effets visuels.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🖼️</div>
+            <h3>Images</h3>
+            <p>Galerie de visuels variés.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🔠</div>
+            <h3>Polices</h3>
+            <p>Typographie soignée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="defis" class="section challenges">
+      <div class="container">
+        <h2>Défis</h2>
+        <ol>
+          <li>Analyser le comportement réseau et le rendu.</li>
+          <li>Identifier les ressources critiques.</li>
+          <li>Proposer des optimisations mesurables.</li>
+          <li>Comparer avant/après avec des outils de mesure.</li>
+          <li>Documenter la démarche.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>TD Optimisation du temps de chargement d’un site web</p>
+        <p>© 2025 — BUT MMI Béziers - MAURIN N.</p>
+      </div>
+    </div>
+    <script src="js/metrics.js" defer></script>
+  </body>
 </html>
