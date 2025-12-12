@@ -21,4 +21,4 @@ Des solutions pour optimiser le site :
 - transformer les jpg en webp
 - supprimer les lignes de css qui ne serve à rien
 - extration du css du contenu le plus large pour le mettre dans le html
-- suppression des lignes qui ne serve pas et qui bloque dans le css et le javascript
+- suppression dde la boucle while dans script + optimisation du code
