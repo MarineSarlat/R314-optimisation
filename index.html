@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Site vitrine</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      :root{--bg:#0f1226;--fg:#E8ECF1;--muted:#93A1B1;--primary:#7C5CFF;--accent:#06D6A0;--card:#15193A;--shadow:rgba(0,0,0,0.45)}
+*{box-sizing:border-box}
+      html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif}
+      .container{width:min(1200px,92%);margin:0 auto}
+      a{color:var(--fg);text-decoration:none;opacity:.9}a:hover{opacity:1}
+      .topbar{position:sticky;top:0;backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(13,16,35,.8),rgba(13,16,35,.2));z-index:10;box-shadow:0 10px 30px var(--shadow)}
+      .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+      .logo{font-weight:700;letter-spacing:.5px}.logo span{color:var(--accent)}.menu{display:flex;gap:22px}
+      .hero{padding:90px 0 40px;background:radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%), radial-gradient(900px 600px at 100% 0%, rgba(6,214,160,.25), transparent 60%)}
+      .hero-inner{display:grid;grid-template-columns:1fr;gap:28px}
+      .hero h1{font-size:clamp(28px,4vw,56px);line-height:1.05;margin:0 0 10px}
+      .hero p{font-size:clamp(16px,1.8vw,22px);color:var(--muted)}
+          </style>
     <script src="js/script.js"></script>
   </head>
   <body>
