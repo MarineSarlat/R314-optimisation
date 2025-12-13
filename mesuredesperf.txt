@@ -1,25 +1,3 @@
-Ces indicateurs sont dans le rouge avant modifications : 
+Lien vers mon site : https://marinesarlat.github.io/R314-optimisation/
 
-First Contentful Paint
-2,2 s
-
-Largest Contentful Paint (Images, bannière)
-8,5 s
-
-Total Blocking Time (javascript)
-1 190 ms
-
-Poids Total
-9710.3 KB
-
-De manière générale les éléments rallentissant le site sont les images trop lourdes et le script javascript.
-
-
-Des solutions pour optimiser le site : 
-
-- compresser les images
-- transformer les jpg en webp
-- supprimer les lignes de css qui ne serve à rien
-- extration du css du contenu le plus large pour le mettre dans le html
-- suppression dde la boucle while dans script + optimisation du code
-_ Ajout d'image plus petite sur la page d'accueil
+Les réponses sont à trouver dans le pdf optmisation du site.
